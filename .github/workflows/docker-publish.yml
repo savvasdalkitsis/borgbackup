@@ -2,6 +2,9 @@ name: publish
 
 on: [push]
 
+env:
+  IMAGE_NAME: ${{ github.repository }}
+  
 jobs:
   publish-image:
     runs-on: ubuntu-latest
