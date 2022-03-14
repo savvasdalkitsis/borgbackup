@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 ARG BUILD_DATE
 LABEL org.label-schema.name="BorgBackup" \
