@@ -12,7 +12,7 @@ LABEL image.name="ubuntu_borgbackup" \
       image.description="Ubuntu based BorgBackup docker image" \
       maintainer.name="Savvas Dalkitsis <kurosavvas@gmail.com>"
 
-RUN apt-get update && apt-get -y install borgbackup
+RUN apt-get update && apt-get -y install borgbackup2
 
 USER root
 
