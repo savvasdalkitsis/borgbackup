@@ -15,8 +15,8 @@ LABEL image.name="ubuntu_borgbackup" \
 RUN apt-get update && apt-get -y install wget 
 
 RUN wget https://github.com/borgbackup/borg/releases/download/1.2.7/borg-linux64 -O /usr/local/bin/borg && \
-    sudo chown root:root /usr/local/bin/borg && \
-    sudo chmod 755 /usr/local/bin/borg
+    chown root:root /usr/local/bin/borg && \
+    chmod 755 /usr/local/bin/borg
 
 USER root
 
